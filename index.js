@@ -6,16 +6,13 @@ var randomNumber2;
 function diceRoller() {
 
   randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
-  console.log(randomNumber1);
-
   randomNumber2 = Math.floor(Math.random() * 6) + 1; //1-6
-  console.log(randomNumber2);
 
   var randomDiceImage1 = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
-  document.querySelector(".img1").setAttribute("src", randomDiceImage1);
+  document.querySelector(".img1").setAttribute("src", "/images/" + randomDiceImage1);
 
   var randomDiceImage2 = "dice" + randomNumber2 + ".png"; //dice1.png - dice6.png
-  document.querySelector(".img2").setAttribute("src", randomDiceImage2)
+  document.querySelector(".img2").setAttribute("src", "/images/" + randomDiceImage2)
 
 }
 function h1Changer(){
